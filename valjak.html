@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <head>
+          <title>Povrsina valjka</title>
+     </head>
+
+     <body>
+     <script type="text/javascript">
+
+        function baza(r) {
+             return r * r * 3.14;
+        }
+
+        function omotac(r, h) {
+             return 2 * r * Math.PI * h;
+        }
+
+        function zapremina_valjka(r, h) {
+             return 2 * baza(r) + omotac(r, h);
+        }
+
+        var x = prompt("enter r:");
+
+        alert("Povrsina baze je " + baza(x));
+
+        var y = prompt("enter h:");
+
+        alert("Povrsina omotaca je " + omotac(x, y));
+
+        alert("Zapremina valjka je " + zapremina_valjka(x, y));
+   </script>
+   </body>
+</html>
